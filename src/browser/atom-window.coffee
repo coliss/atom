@@ -24,10 +24,12 @@ class AtomWindow
     locationsToOpen ?= []
 
     options =
-      show: false
-      title: 'Atom'
-      'web-preferences':
-        'direct-write': true
+  frame: false
+  transparent: true
+  show: false
+  title: 'Atom'
+  'web-preferences':
+    'direct-write': true
 
     if @isSpec
       options['web-preferences']['page-visibility'] = true
